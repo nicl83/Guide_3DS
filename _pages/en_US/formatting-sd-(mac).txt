@@ -26,13 +26,37 @@ This page is for Mac users only. If you are not on Mac, check out the [Formattin
 	{: .notice--danger}
 
 1. Click "Erase" at the top
-1. Ensure that "Name" is empty
+1. Enter any label for "Name" except "3DS"
 1. Ensure that "Format" is set to "MS-DOS (FAT)"
 1. Ensure that "Scheme" is set to "Master Boot Record"
   + If "Scheme" does not appear, click "Cancel" and make sure to choose the device instead of a volume
 1. Click "Erase"
 1. Wait for the format to finish
 1. Click "Close"
+1. If the SD card had any files and folders on it before the format, copy everything back from your computer
+
+#### OS X Yosemite (10.10) and earlier
+
+1. Insert your SD card into your computer
+1. If the SD card has any files and folders on it, copy everything to a folder on your computer
+1. Run the Disk Utility app
+1. Select your SD card in the left panel
+
+	Make sure you choose the correct device, otherwise you might accidentally erase the wrong drive!
+	{: .notice--danger}
+
+1. Click "Partition" at the top
+  + If "Partition" does not appear, make sure to choose the device instead of a volume
+1. Ensure that "Partition Layout" is set to "1 Partition"
+1. Enter any label for "Name" except "3DS"
+1. Ensure that "Format" is set to "MS-DOS (FAT)"
+1. Click "Options" below the partition table
+1. Choose "Master Boot Record"
+1. Click "OK"
+1. Click "Apply"
+1. Click "Partition"
+1. Wait for the format to finish
+1. Close Disk Utility
 1. If the SD card had any files and folders on it before the format, copy everything back from your computer
 
 ### Return to [Get Started](get-started)
