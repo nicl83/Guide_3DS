@@ -26,7 +26,7 @@ This page is for Mac users only. If you are not on Mac, check out the [Formattin
 	{: .notice--danger}
 
 1. Click "Erase" at the top
-1. Enter any label for "Name" except "3DS"
+1. Enter anything for "Name"
 1. Ensure that "Format" is set to "MS-DOS (FAT)"
 1. Ensure that "Scheme" is set to "Master Boot Record"
   + If "Scheme" does not appear, click "Cancel" and make sure to choose the device instead of a volume
@@ -48,7 +48,7 @@ This page is for Mac users only. If you are not on Mac, check out the [Formattin
 1. Click "Partition" at the top
   + If "Partition" does not appear, make sure to choose the device instead of a volume
 1. Ensure that "Partition Layout" is set to "1 Partition"
-1. Enter any label for "Name" except "3DS"
+1. Enter anything for "Name"
 1. Ensure that "Format" is set to "MS-DOS (FAT)"
 1. Click "Options" below the partition table
 1. Choose "Master Boot Record"
