@@ -8,10 +8,6 @@ title: "Începeți"
 
 Alegeți pagina corespunzătore versiunii dumneavoastră din tabelul de mai jos. Țineți cont cum câmpurile "de la" și "până la" sunt inclusiv. Asta înseamnă că, de exemplu, rândul "de la 9.0.0 până la 9.2.0" cuprinde 9.0.0, 9.1.0, și 9.2.0.
 
-În plus, țineţi cont că ultimele două coloane ale tabelului se referă la ultimul număr al versiunii (care corespunde versiunii browserului instalat pe dispozitiv). Dacă versiunea este -0 atunci nu aveți un browser, în timp ce orice alt număr mai mare decât -0 arată că aveți browser instalat.
-
-În cazul versiunii "5.0.0-0U" de exemplu, urmăriți coloana "Fără Browser" și rândul 5.0.0 până la 5.1.0 din cauza că sistemul este pe o versiune din acel interval și nu are browserul instalat.
-
 Versiunea dispozitvului poate fi găsit în colțul din dreapta jos al ecranului superior din System Settings.
 
 ![]({{ "/images/screenshots/system-version.png" | absolute_url }})
@@ -60,38 +56,37 @@ Au existat rapoarte de un val de banuri adresate utilizatorilor de CFW de către
     <tr>
       <th style="text-align: center">De la</th>
       <th style="text-align: center">Până la</th>
-      <th style="text-align: center">Fără Browser</th>
-      <th style="text-align: center">Cu Browser</th>
+      <th style="text-align: center">Action</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center; font-weight: bold;">1.0.0</td>
       <td style="text-align: center; font-weight: bold;">2.0.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2">Actualizați la ultima versiune sau folosiți o metodă pentru "Toate versiunile"</td>
+      <td style="text-align: center; font-weight: bold;">Update to latest firmware or use an "All Versions" Method</td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;">2.1.0</td>
       <td style="text-align: center; font-weight: bold;">8.1.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><a href="installing-boot9strap-(soundhax)">Instalând boot9strap (Soundhax)</a></td>
+      <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(soundhax)">Installing boot9strap (Soundhax)</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;">9.0.0</td>
       <td style="text-align: center; font-weight: bold;">11.3.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"> <a href="homebrew-launcher-(soundhax)">Homebrew Launcher (Soundhax)</a></td>
+      <td style="text-align: center; font-weight: bold;"><a href="homebrew-launcher-(soundhax)">Homebrew Launcher (Soundhax)</a></td>
     </tr><tr>
       <td style="text-align: center; font-weight: bold;">11.4.0</td>
       <td style="text-align: center; font-weight: bold;">11.11.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2">Actualizați la ultima versiune sau folosiți o metodă pentru "Toate versiunile"</td>
+      <td style="text-align: center; font-weight: bold;">Update to latest firmware or use an "All Versions" Method</td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;">11.12.0</td>
       <td style="text-align: center; font-weight: bold;">11.13.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><a href="seedminer">Seedminer</a></td>
+      <td style="text-align: center; font-weight: bold;"><a href="seedminer">Seedminer</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;" colspan="2">TOATE VERSIUNILE<br></td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="ntrboot">ntrboot</a><br><sub>(Necesită un flashcart compatibil)</sub></p><p style="display: inline-block; margin-top: 1.3em; vertical-align: super; width: 6%">sau</p><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(hardmod)">Instalând boot9strap (Hardmod)</a><br><sub>(Necesită sudură)</sub></p></td>
+      <td style="text-align: center; font-weight: bold;"><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="ntrboot">ntrboot</a><br><sub>(Requires a Compatible Flashcart)</sub></p><p style="display: inline-block; margin-top: 1.3em; vertical-align: super; width: 6%">or</p><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(hardmod)">Installing boot9strap (Hardmod)</a><br><sub>(Requires Soldering)</sub></p></td>
     </tr>
   </tbody>
 </table>
