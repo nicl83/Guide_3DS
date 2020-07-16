@@ -4,7 +4,7 @@ title: "Legacy Methods"
 
 {% include toc title="Table of Contents" %}
 
-### Leitura Obrigatória
+### Required Reading
 
 There have been multiple improvements and advancements to methods for installing CFW over the last short while.
 
