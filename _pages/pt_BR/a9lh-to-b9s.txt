@@ -4,7 +4,7 @@ title: "Atualizando para o B9S"
 
 {% include toc title="Table of Contents" %}
 
-### Leitura Obrigatória
+### Required Reading
 
 Esta página é para usuários de uma instalção arm9loaderhax pré existente atualizarem seus dispositivos para boot9strap.
 
