@@ -4,7 +4,7 @@ title: "Atualizando B9S" #
 
 {% include toc title="Table of Contents" %}
 
-### Leitura Obrigatória
+### Required Reading
 
 Esta página é para usuários do boot9strap atualizarem a instalação do boot9strap para a versão mais recente.
 
