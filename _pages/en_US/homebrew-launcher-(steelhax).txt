@@ -18,7 +18,7 @@ If you already have Steel Diver: Sub Wars, this process will overwrite your game
 
 * The free eShop game "Steel Diver: Sub Wars"
 * Your `movable.sed` file from completing [Seedminer](seedminer)
-* The latest release of [the Homebrew Launcher](https://github.com/fincs/new-hbmenu/releases/latest)
+* Version 2.1.1 of [the Homebrew Launcher](https://github.com/fincs/new-hbmenu/releases/download/v2.1.1/boot.3dsx)
 * The latest release of [Steelhax](https://github.com/MechanicalDragon0687/vegaroxas.github.io/releases/download/1.0/steelhax-release.zip)
 * The [otherapp payload](https://deadphoenix8091.github.io/3ds/#otherapp) *(for your region and version)*
 
