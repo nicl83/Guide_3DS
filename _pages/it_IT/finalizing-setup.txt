@@ -51,7 +51,7 @@ Durante la guida verranno anche configurate le seguenti applicazioni:
 1. Copia il file `Checkpoint.cia` nella cartella `/cias/` della tua scheda SD
 1. Se assente, crea una cartella chiamata `payloads` nella cartella `luma` della tua scheda SD
 1. Copia il file `GodMode9.firm` dall'archivio `.zip` di GodMode9 dentro la cartella `/luma/payloads/` della tua scheda SD
-1. Copy `DO_NOT_LAUNCH.firm` to the `/luma/payloads/` folder on your SD card
+1. Copia il file `DO_NOT_LAUNCH.firm` nella cartella `/luma/payloads/` della tua scheda SD
 1. Copia la cartella `gm9` presente nell'archivio `.zip` di GodMode9 nella directory principale della tua scheda SD
 1. Reinserisci la scheda SD nella tua console
 1. Accendi la console
@@ -104,7 +104,7 @@ Se prima di seguire questa guida avevi già un'installazione EmuNAND presente e 
 #### Sezione VI - CTRNAND Luma3DS
 
 1. Spegni il tuo 3DS
-1. Hold (Start) during boot to open the Luma3DS chainloader
+1. Accendi la console tenendo premuto (Start) per avviare il chainloader di Luma3DS
 1. Press (A) with GodMode9 highlighted in red to launch it
 1. Se ti viene richiesto di creare un backup dei file essenziali, premi (A) per accettare, e al termine di nuovo (A) per proseguire
 1. Se ti viene chiesto di reimpostare la data e l'ora dell'RTC, premi (A) per farlo, poi imposta la data e l'ora, infine premi (A) per continuare
