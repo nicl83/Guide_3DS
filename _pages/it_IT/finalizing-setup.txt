@@ -105,7 +105,7 @@ Se prima di seguire questa guida avevi già un'installazione EmuNAND presente e 
 
 1. Spegni il tuo 3DS
 1. Accendi la console tenendo premuto (Start) per avviare il chainloader di Luma3DS
-1. Press (A) with GodMode9 highlighted in red to launch it
+1. Premi (A) con GodMode9 evidenziato in rosso per avviarlo
 1. Se ti viene richiesto di creare un backup dei file essenziali, premi (A) per accettare, e al termine di nuovo (A) per proseguire
 1. Se ti viene chiesto di reimpostare la data e l'ora dell'RTC, premi (A) per farlo, poi imposta la data e l'ora, infine premi (A) per continuare
 1. Premi il pulsante HOME per far apparire il menu delle azioni
