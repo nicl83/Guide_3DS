@@ -16,7 +16,7 @@ title: "Перенос EmuNAND"
 ### Что понадобится
 
 * Существующий EmuNAND
-* Свежая версия [GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
+* The latest release of [GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
 * Свежая версия [FBI](https://github.com/Steveice10/FBI/releases/latest)
 
 ### Инструкция

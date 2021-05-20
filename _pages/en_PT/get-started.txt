@@ -6,49 +6,25 @@ title: "Get Started"
 
 ### Required Reading
 
-Select th' appropriate page fer ye version from th' chart below. Note that th' "from" 'n "to" fields be inclusive. 'Tis means that, fer example, th' "from 9.0.0 to 9.2.0" row be includin' 9.0.0, 9.1.0, 'n 9.2.0.
+If you have hacked your 3DS in the past, or you purchased your 3DS second-hand, it is possible that your console already has custom firmware. You should [check for CFW](checking-for-cfw) before proceeding.
+{: .notice--warning}
 
-Additionally, note that th' last two columns 'o th' chart refer to th' last number 'o ye version (which be correspondin' to th' browser version installed to th' system). If th' version be -0 then ye do not have a browser, while any number above -0 indicates a browser be installed.
-
-In th' case 'o "5.0.0-0U" fer example, ye would follow th' "No Browser" column 'n 5.0.0 to 5.1.0 row because th' system be on th' a system version in that range 'n has no browser installed.
+Select th' appropriate page fer ye version from th' chart below. Note that th' "from" 'n "to" fields be inclusive.
 
 Ye device version can be found at th' bottom right 'o th' top screen 'o th' System Settin's.
 
 ![]({{ "/images/screenshots/system-version.png" | absolute_url }})
 {: .notice--info}
 
-**If you are unable to follow the instructions corresponding to your specific version due to missing prerequisites, then you should either update to the latest version or use the "All Versions" row for methods that work regardless of system version.**
-
-For all versions you can also [Cartridge Update](cart-update) (or use a standard system update) to get to a higher version in the same column to follow its instructions.
-
-If ye have already hacked ye 3DS before 'n be havin' an EmuNAND based CFW setup, jus' follow all instructions while on SysNAND. Replace any files that already exist. Your data will be transferred from EmuNAND to your new B9S install at the end. If you use menuhax, you should [clear Home Menu's extdata](troubleshooting#clear-home-menu-extdata) to remove it before beginning.
-
-This page is for instructions on how to install boot9strap to a *stock* 3DS or 2DS. If you already have arm9loaderhax installed and are looking to update to boot9strap, follow [A9LH to B9S](a9lh-to-b9s).
-{: .notice--primary}
-
-Before starting, Windows users should enable the option to show file extensions using [File Extensions (Windows)](file-extensions-(windows))!
-{: .notice--info}
-
-Before startin', ye may want to check ye SD card fer errors usin' [H2testw (Windows)](h2testw-(windows)), [F3 (Linux)](f3-(linux)), or [F3X (Mac)](f3x-(mac))!
+Before starting, you may want to check your SD card for errors using [H2testw (Windows)](h2testw-(windows)), [F3 (Linux)](f3-(linux)), or [F3XSwift (Mac)](f3xswift-(mac))!
 {: .notice--warning}
 
-{% capture notice-1 %}
-There have been reports 'o a wave 'o bans bein' handed out to CFW users by Nintendo. Fer ye protection, please be followin' these steps before startin' 'tis guide:
-
-1. Go to System Settin's, then "Internet Setttings", then "SpotPass", then "Sending of System Information"
-1. Disable th' "Sending of System Information" option
-1. Exit th' System Settin's
-1. Go to your Friend List (the [orange Face Icon]({{ "/images/friend-list-icon.png" | absolute_url }}) in the top row of your Home Menu)
-  + If you receive an error and are kicked out of the menu, the Friend List setting is either already disabled or your console cannot connect to Nintendo's servers (due to a ban or connection issues)
-1. Go to the Friend List settings, then "Friend Notification Settings", then "Show friends what you're playing"
-1. Disable th' "Show friends what you're playing" option
-1. Exit your Friend List
-
-{% endcapture %}
-
-<div class="notice--danger">{{ notice-1 | markdownify }}</div>
+While we believe that custom firmware is safe for online use, there have been online network bans in the past, primarily for cheating and suspicious eShop behavior.
+{: .notice--warning}
 
 ### Version Table
+
+The letter and number after the system version (for example, 11.14.0-**46U**) is not relevant in this version table.
 
 <table>
   <colgroup>
@@ -60,38 +36,27 @@ There have been reports 'o a wave 'o bans bein' handed out to CFW users by Ninte
     <tr>
       <th style="text-align: center">From</th>
       <th style="text-align: center">To</th>
-      <th style="text-align: center">No Browser</th>
-      <th style="text-align: center">Browser</th>
+      <th style="text-align: center">Action</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center; font-weight: bold;">1.0.0</td>
-      <td style="text-align: center; font-weight: bold;">2.0.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2">Update to latest firmware or use an "All Versions" Method</td>
-    </tr>
-    <tr>
-      <td style="text-align: center; font-weight: bold;">2.1.0</td>
-      <td style="text-align: center; font-weight: bold;">8.1.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><a href="installing-boot9strap-(soundhax)">Installing boot9strap (Soundhax)</a></td>
-    </tr>
-    <tr>
-      <td style="text-align: center; font-weight: bold;">9.0.0</td>
       <td style="text-align: center; font-weight: bold;">11.3.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><a href="homebrew-launcher-(soundhax)">Homebrew Launcher (Soundhax)</a></td>
-    </tr><tr>
+      <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(soundhax)">Installing boot9strap (Soundhax)</a></td>
+    </tr>
+	<tr>
       <td style="text-align: center; font-weight: bold;">11.4.0</td>
-      <td style="text-align: center; font-weight: bold;">11.11.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2">Update to latest firmware or use an "All Versions" Method</td>
+      <td style="text-align: center; font-weight: bold;">11.13.0</td>
+      <td style="text-align: center; font-weight: bold;">Update your 3DS to the latest version through System Settings</td>
     </tr>
     <tr>
-      <td style="text-align: center; font-weight: bold;">11.12.0</td>
-      <td style="text-align: center; font-weight: bold;">11.13.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><a href="seedminer">Seedminer</a></td>
+      <td style="text-align: center; font-weight: bold;" colspan="2">11.14.0 (latest version)</td>
+      <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(browser)">Installing boot9strap (Browser)</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;" colspan="2">ALL VERSIONS<br></td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="ntrboot">ntrboot</a><br><sub>(Needs a Compatible Flashcart)</sub></p><p style="display: inline-block; margin-top: 1.3em; vertical-align: super; width: 6%">or</p><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(hardmod)">Installin' boot9strap (Hardmod)</a><br><sub>(Needs Solderin')</sub></p></td>
+      <td style="text-align: center; font-weight: bold;"><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="ntrboot">ntrboot</a><br><sub>(Requires a Compatible Flashcart)</sub></p><p style="display: inline-block; margin-top: 1.3em; vertical-align: super; width: 6%">or</p><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(hardmod)">Installing boot9strap (Hardmod)</a><br><sub>(Requires Soldering)</sub></p></td>
     </tr>
   </tbody>
 </table>

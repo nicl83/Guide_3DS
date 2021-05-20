@@ -4,6 +4,9 @@ title: "BannerBomb3"
 
 {% include toc title="Table des matières" %}
 
+Les méthodes basées sur Seedminer ont été remplacées par des méthodes plus simples et plus sûres. Veuillez retourner à [Bien Démarrer](get-started) à moins que vous n'ayez une raison légitime de suivre cette page (si vos boutons L et R sont cassés).
+{: .notice--warning}
+
 ### Lecture requise
 
 Pour extraire un DSiWare système, nous exploitons une faille dans l'onglet de gestion des données DSiWare présent dans les paramètres système.
@@ -17,7 +20,7 @@ Ces instructions fonctionnent dans les régions USA, Europe, Japon et Corée ind
 * Votre fichier `movable.sed` obtenu grâce à [Seedminer](seedminer)
 
 #### Section I - BannerBomb3
-1. Ouvrez [BannerBomb3 Tool](https://bb3.bruteforcemovable.com/) sur votre ordinateur
+1. Ouvrez [BannerBomb3 Tool](https://3ds.nhnarwhal.com/3dstools/bannerbomb3.php) sur votre ordinateur
 1. Téléchargez votre movable.sed en utilisant l'option "Choisir le fichier"
 1. Cliquez sur "Go"
   + Ceci téléchargera un DSiWare d'exploit nommé `F00D43D5.bin` dans un fichier zip (`tadmuffin_out.zip`)
@@ -30,7 +33,7 @@ Ces instructions fonctionnent dans les régions USA, Europe, Japon et Corée ind
   + Cela vous laissera avec un dossier Nintendo DSiWare vide. Déplacer ces fichiers sur votre PC vous assure de ne pas perdre vos copies
 1. Copiez le fichier `F00D43D5.bin` du dossier `output\Usa_Europe_Japan_Korea\` de l'archive téléchargée de BannerBomb3 (`tadmuffin_out.zip`) dans le dossier `Nintendo DSiWare`
 1. Réinsérez votre carte SD dans votre 3DS
-1. Allumez à présent votre 3DS
+1. Allumez votre console
 1. Lancez les Paramètres de la console
 1. Naviguez vers `Gestion des données` -> `DSiWare`
 1. Cliquez sur l'onglet Carte SD

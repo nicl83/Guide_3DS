@@ -6,49 +6,25 @@ title: "Bien Démarrer"
 
 ### Lecture requise
 
-Sélectionnez la page appropriée à votre version dans le tableau ci-dessous. Notez que les champs "De" et "À" sont inclusifs. Cela signifie - par exemple - que la ligne "De 9.0.0 à 9.2.0" inclut 9.0.0, 9.1.0 et 9.2.0.
+Si vous avez hacké votre 3DS par le passé, ou si vous avez acheté votre 3DS d'occasion, il est possible que votre console dispose déjà d'un custom firmware. Vous devriez [vérifier la présence d'un CFW](checking-for-cfw) avant de continuer.
+{: .notice--warning}
 
-Les 2 dernières colonnes du tableau correspondent au dernier nombre de votre numéro de version (qui correspond à la version du navigateur de votre console). Si votre version est -0, vous n'avez pas de navigateur internet installé, une version supérieure à -0 indique qu'un navigateur est installé.
-
-Dans le cas de "5.0.0-0U" par exemple, vous devez suivre la colonne "Sans navigateur" et la ligne "De 5.0.0 à 5.1.0" car le système est dans une version qui est dans cet intervalle et n'a pas de navigateur installé.
+Sélectionnez la page appropriée à votre version dans le tableau ci-dessous. Notez que les champs "De" et "À" sont inclusifs.
 
 La version de votre console peut être trouvée en bas à droite de l'écran supérieur de la 3DS - dans les Paramètres Systèmes de la console.
 
 ![]({{ "/images/screenshots/system-version.png" | absolute_url }})
 {: .notice--info}
 
-**Si vous ne pouvez pas suivre les instructions correspondant à votre version spécifique en raison de conditions préalables manquantes, vous devriez soit mettre à jour vers la dernière version soit regarder la ligne "Toutes les versions" pour les méthodes qui fonctionnent indépendamment de la version du système.**
-
-Pour toutes les versions, vous pouvez également faire une [Mise à jour par Cartouche](cart-update) (ou faire une mise à jour standard du système) vers une version ultérieure de la même colonne pour suivre les instructions correspondant à cette nouvelle version.
-
-Si vous avez déjà hacké votre 3DS dans le passé et avez un CFW basé sur une EmuNAND, suivez simplement toutes les instructions depuis votre SysNAND. Remplacez tout fichier déjà existant. Vos données vont être transférées de l'EmuNAND à votre installation de B9S à la fin. Si vous utilisez menuhax, vous devez [nettoyer les extdata du Menu Home](troubleshooting#effacer-lextdata-du-menu-home) pour le supprimer avant de commencer.
-
-Cette page donne des instructions sur comment installer boot9strap sur une 3DS ou 2DS vierge. Si vous avez déjà installé arm9loaderhax et que vous voulez passer à boot9strap, suivez [A9LH to B9S](a9lh-to-b9s).
-{: .notice--primary}
-
-Avant de commencer, les utilisateurs de Windows devraient permettre d'afficher les extensions de fichiers suivant ce guide [Extensions de fichiers (Windows)](file-extensions-(windows))!
-{: .notice--info}
-
-Avant de commencer, assurez vous que votre carte SD n'a pas d'erreurs en utilisant [H2testw (Windows)](h2testw-(windows)), [F3 (Linux)](f3-(linux)), ou [F3X (Mac)](f3x-(mac))!
+Avant de commencer, vous devriez vérifier que votre carte SD ne contient pas d'erreurs à l'aide de [H2testw (Windows)](h2testw-(windows)), [F3 (Linux)](f3-(linux)), ou [F3XSwift (Mac)](f3xswift-(mac))!
 {: .notice--warning}
 
-{% capture notice-1 %}
-Il y a eu des informations concernant une vague de bannissements contre les utilisateurs de CFW par Nintendo. Pour vous protéger, merci de bien faire les étapes suivantes avant de commencer ce guide:
-
-1. Allez dans les paramètres de la console, puis dans les "Paramètres Internet", puis dans "SpotPass" puis "Envoi de données d'utilisation"
-1. Désactivez l'option "Envoi de données d'utilisation"
-1. Sortez des paramètres système
-1. Accédez à votre liste d’ami ([icône de visage orange] ({{"/images/friend-list-icon.png" | absolute_url}}) dans la rangée du haut de votre menu HOME)
-  + Si vous obtenez un message d’erreur et êtes sorti du menu de force, soit la liste d’ami est déjà désactivée soit votre console ne peut pas se connecter aux serveurs de Nintendo (en raison d’un ban ou un problème de connexion)
-1. Allez dans les paramètres de la liste d’ami, puis "Notification à vos amis", puis "Afficher le titre du logiciel que vous utilisez"
-1. Désactivez l'option "Afficher le titre du logiciel que vous utilisez"
-1. Sortez de votre liste d’amis
-
-{% endcapture %}
-
-<div class="notice--danger">{{ notice-1 | markdownify }}</div>
+Bien que nous pensons que le custom firmware est sûr pour un utilisation en ligne, des cas de bannissements ont été rapportés dans le passé, principalement à cause de tricherie en ligne ou d'un comportement suspect de l'eShop.
+{: .notice--warning}
 
 ### Tableau des versions
+
+La lettre et le nombre après la version du système (par exemple, 11.14.0-**46U**) n'ont pas d'importance dans cette table de version.
 
 <table>
   <colgroup>
@@ -60,38 +36,27 @@ Il y a eu des informations concernant une vague de bannissements contre les util
     <tr>
       <th style="text-align: center">De</th>
       <th style="text-align: center">À</th>
-      <th style="text-align: center">Sans Navigateur</th>
-      <th style="text-align: center">Navigateur</th>
+      <th style="text-align: center">Action</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center; font-weight: bold;">1.0.0</td>
-      <td style="text-align: center; font-weight: bold;">2.0.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2">Mettez à jour vers la version la plus récente du logiciel système ou utilisez une méthode "Toutes Versions"</td>
-    </tr>
-    <tr>
-      <td style="text-align: center; font-weight: bold;">2.1.0</td>
-      <td style="text-align: center; font-weight: bold;">8.1.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><a href="installing-boot9strap-(soundhax)">Installation de boot9strap (Soundhax)</a></td>
-    </tr>
-    <tr>
-      <td style="text-align: center; font-weight: bold;">9.0.0</td>
       <td style="text-align: center; font-weight: bold;">11.3.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><a href="homebrew-launcher-(soundhax)">Homebrew Launcher (Soundhax)</a></td>
-    </tr><tr>
+      <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(soundhax)">Installation de boot9strap (Soundhax)</a></td>
+    </tr>
+	<tr>
       <td style="text-align: center; font-weight: bold;">11.4.0</td>
-      <td style="text-align: center; font-weight: bold;">11.11.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2">Mettez à jour vers la version la plus récente du logiciel système ou utilisez une méthode "Toutes Versions"</td>
+      <td style="text-align: center; font-weight: bold;">11.13.0</td>
+      <td style="text-align: center; font-weight: bold;">Update your 3DS to the latest version through System Settings</td>
     </tr>
     <tr>
-      <td style="text-align: center; font-weight: bold;">11.12.0</td>
-      <td style="text-align: center; font-weight: bold;">11.13.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><a href="seedminer">Seedminer</a></td>
+      <td style="text-align: center; font-weight: bold;" colspan="2">11.14.0 (dernière version)</td>
+      <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(browser)">Installation de boot9strap (Navigateur Web)</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;" colspan="2">TOUTES LES VERSIONS <br></td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="ntrboot">ntrboot</a><br><sub>(Nécessite un Linker Compatible)</sub></p><p style="display: inline-block; margin-top: 1.3em; vertical-align: super; width: 6%">ou</p><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(hardmod)">Installer boot9strap (Hardmod)</a><br><sub>(Nécessite d'effectuer de la soudure)</sub></p></td>
+      <td style="text-align: center; font-weight: bold;"><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="ntrboot">ntrboot</a><br><sub>(Nécessite un Linker Compatible)</sub></p><p style="display: inline-block; margin-top: 1.3em; vertical-align: super; width: 6%">ou</p><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(hardmod)">Installer boot9strap (Hardmod)</a><br><sub>(Nécessite d'effectuer de la soudure)</sub></p></td>
     </tr>
   </tbody>
 </table>

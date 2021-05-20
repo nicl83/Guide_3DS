@@ -4,7 +4,7 @@ title: "H2testw (Windows)"
 
 {% include toc title="Table of Contents" %}
 
-### Leitura Obrigatória
+### Required Reading
 
 Esta é uma seção adicional para verificar erros no seu cartão SD usando h2testw.
 
@@ -14,7 +14,7 @@ Esta página é destinada apenas a usuários do Windows. Se você não estiver n
 
 ### What You Need
 
-* A versão mais recente do [h2testw](http://www.heise.de/ct/Redaktion/bo/downloads/h2testw_1.4.zip)
+* The latest version of [h2testw](https://www.heise.de/ct/Redaktion/bo/downloads/h2testw_1.4.zip)
 
 ### Instructions
 

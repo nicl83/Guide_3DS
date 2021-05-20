@@ -4,7 +4,7 @@ title: "Usos de GodMode9"
 
 {% include toc title="Tabla de contenidos" %}
 
-Para soporte (en inglés) para GodMode9, así como ayudar con la creación de scripts y obtener actualizaciones e información, únete al [Discord de GodMode9](https://discord.gg/EGu6Qxw).
+For support (in English) with GodMode9, as well as help with scripting and to get updates and info, join [GodMode9 on Discord](https://discord.gg/BRcbvtFxX4).
 {: .notice--primary}
 
 ### Lectura requerida
@@ -22,7 +22,7 @@ Algunas de las siguientes instrucciones sólo son aplicables a la última versi�
 
 ### Qué necesitas
 
-* La ultima versión de [GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
+* The latest release of [GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
 
 ### Instrucciones
 
@@ -34,7 +34,7 @@ Algunas de las siguientes instrucciones sólo son aplicables a la última versi�
 
 ## Crear una copia de seguridad de la NAND
 
-1. Inicia GodMode9 manteniendo presionado (Start) mientras enciendes la consola
+1. Press and hold (Start), and while holding (Start), power on your device. This will launch GodMode9
 1. Presiona el botón (Home) para abrir el menú de acción
 1. Selecciona "Scripts..."
 1. Selecciona "GM9Megascript"
@@ -58,7 +58,7 @@ Algunas de las siguientes instrucciones sólo son aplicables a la última versi�
 
 ## Restaurar una copia de seguridad de la NAND
 
-1. Inicia GodMode9 manteniendo presionado (Start) mientras enciendes la consola
+1. Press and hold (Start), and while holding (Start), power on your device. This will launch GodMode9
 1. Mantén (R) y presiona (B) al mismo tiempo para extraer la SD
 1. Inserta tu tarjeta SD en tu computadora
 1. Copia `<fecha>_<númerodeserie>_sysnand_###.bin` desde tu computadora a la carpeta `/gm9/out/` en tu tarjeta SD
@@ -85,7 +85,7 @@ Para mantener el orden, copia el archivo `.cia` que deseas inyectar a la carpeta
 Ten en cuenta que no es posible inyectar archivos en Salud y Seguridad que sean más grandes que esta aplicación (incluyendo juegos y otras aplicaciones de gran tamaño)
 {: .notice--info}
 
-1. Inicia GodMode9 manteniendo presionado (Start) mientras enciendes la consola
+1. Press and hold (Start), and while holding (Start), power on your device. This will launch GodMode9
 1. Ve a `[0:] SDCARD` -> `cias`
 1. Presiona (A) sobre tu archivo `.cia` para seleccionarlo, después selecciona "CIA image options...", y luego selecciona "Mount image to drive"
 1. Presiona (A) en el archivo `.app`, después selecciona "NCCH image options", y luego selecciona "Inject to H&S"
@@ -98,97 +98,12 @@ Ten en cuenta que no es posible inyectar archivos en Salud y Seguridad que sean 
 Esto sólo funcionará si la inyección sobre Salud y Seguridad fue realizada con GodMode9 (no con Decrypt9 u Hourglass9).
 {: .notice--info}
 
-1. Inicia GodMode9 manteniendo presionado (Start) mientras enciendes la consola
+1. Press and hold (Start), and while holding (Start), power on your device. This will launch GodMode9
 1. Presiona el botón (Home) para abrir el menú de acción
 1. Selecciona "Mas..."
 1. Selecciona "Restore H&S"
 1. Presiona (A) para desbloquear la escritura de SysNAND (lvl1) y después haz la combinación de teclas mostrada
 1. Presiona (A) para volver a bloquear los permisos de escritura si se solicita
-
-## Volcar un cartucho de juego
-
-{% capture notice %}
-Inserta el cartucho de juego que vas a volcar en tu consola
-  + Los cartuchos de juegos de 3DS serán volcados en un formato `.cia` instalable
-  + Los cartuchos de juegos de NDS serán volcados en el formato `.nds` no instalable, compatible con flashcarts y emuladores
-{% endcapture %}
-
-<div class="notice--info">{{ notice | markdownify }}</div>
-
-1. Inicia GodMode9 manteniendo presionado (Start) mientras enciendes la consola
-1. Ve a `[C:] GAMECART`
-1. Sigue los pasos de según tu cartucho de juego:
-  + **Cartucho de 3DS:** Presiona (A) sobre `[TitleID].trim.3ds` para seleccionarlo, luego selecciona "NCSD image options...", y luego "Build CIA from file"
-  + **Cartucho de NDS:** Presiona (A) sobre `[TitleID].trim.nds` para seleccionarlo, luego selecciona "Copy to 0:/gm9/out"
-1. Tus archivo `.cia` instalable o `.nds` no instalable será guardado en la carpeta `/gm9/out/` de tu tarjeta SD
-
-## Volcar un título (juegos y aplicaciones)
-
-1. Inicia GodMode9 manteniendo presionado (Start) mientras enciendes la consola
-1. Selecciona la unidad correspondiente al tipo de título que quieras volcar:
-  + **Título instalado por el usuario**: `[A:] SYSNAND SD`
-  + **Título del sistema**: `[1:] SYSNAND CTRNAND`
-1. Mantén (R) y presiona (A) al mismo tiempo para abrir las opciones de unidad
-1. Selecciona "Search for titles"
-1. Presiona (A) para continuar
-1. Presiona (A) sobre el archivo `.tmd` para seleccionarlo, luego selecciona "TMD file options...", y luego selecciona "Build CIA (standard)"
-1. Tu archivo con formato instalable `.cia` será guardado en la carpeta `/gm9/out/` en tu tarjeta SD
-
-## Convertir un archivo .3DS a .CIA
-
-{% capture notice %}
-+ Para mantener el orden, copia cada `.3ds` que quieras convertir a la carpeta `/cias/` en tu tarjeta SD
-  + Ten en cuenta que si quieres convertir un archivo `.3ds` que ya está en una flashcart, debes seguir [Volcar un cartucho de juego](#volcar-un-cartucho-de-juego)
-{% endcapture %}
-
-<div class="notice--info">{{ notice | markdownify }}</div>
-
-1. Inicia GodMode9 manteniendo presionado (Start) mientras enciendes la consola
-1. Ve a `[0:] SDCARD` -> `cias`
-1. Presiona (A) en tu archivo `.3ds` para seleccionarlo, luego selecciona "NCSD image options...", y luego selecciona "Build CIA from file"
-1. Tu archivo con formato instalable `.cia` será guardado en la carpeta `/gm9/out/` en tu tarjeta SD
-
-## Respaldar datos de guardado de la Consola Virtual de GBA
-
-El juego será almacenado en la carpeta `/gm9/out/` de tu tarjeta SD con el nombre `<TitleID>.gbavc.sav`.
-{: .notice--info}
-
-Para identificar el ID de título de un archivo `<TitleID>.gbavc.sav`, puedes obtener una lista de todos los juegos e nel sistema y sus correspondientes IDs de titulo marcando `[A:] SYSNAND SD`, sosteniendo (R) y presionando (A) al mismo tiempo, y luego seleccionando "Search for titles".
-{: .notice--info}
-
-1. Realiza lo siguiente por cada juego de Consola Virtual de GBA del cual quieras conservar los datos de guardado:
-  + Inicia el juego de Consola Virtual de GBA
-  + Sal del juego de Consola Virtual de GBA
-  + Enciende tu consola manteniendo (Start) para ingresar al menú de selección de payloads de Luma3DS
-  + Inicia GodMode9 presionando (A)
-  + Ve a `[S:] SYSNAND VIRTUAL`
-  + Presiona (A) en `agbsave.bin` para seleccionarlo
-  + Selecciona "AGBSAVE options..."
-  + Selecciona "Dump GBA VC save"
-  + Presiona (A) para continuar
-  + Presiona (Start) para reiniciar tu consola
-
-## Restaurar datos de guardado de la Consola Virtual de GBA
-
-Para identificar el ID de título de un archivo `<TitleID>.gbavc.sav`, puedes obtener una lista de todos los juegos e nel sistema y sus correspondientes IDs de titulo marcando `[A:] SYSNAND SD`, sosteniendo (R) y presionando (A) al mismo tiempo, y luego seleccionando "Search for titles".
-{: .notice--info}
-
-1. Haz lo siguiente por cada juego de Consola Virtual de GBA del cual quieras restaurar sus datos de guardado:
-  + Inicia el juego de Consola Virtual de GBA
-  + Sal del juego de Consola Virtual de GBA
-  + Enciende tu consola manteniendo (Start) para ingresar al menú de selección de payloads de Luma3DS
-  + Inicia GodMode9 presionando (A)
-  + Ve a `[0:] SDCARD` -> `gm9`
-  + Presiona (Y) en el archivo `<TitleID>.gbavc.sav` que deseas restaurar para copiarlo
-  + Presiona (B) para regresar al menú principal
-  + Ve a `[S:] SYSNAND VIRTUAL`
-  + Presiona (A) en `agbsave.bin` para seleccionarlo
-  + Selecciona "AGBSAVE options..."
-  + Selecciona "Inject GBA VC save"
-  + Presiona (A) para continuar
-  + Presiona (Start) para reiniciar tu consola
-  + Inicia el juego de Consola Virtual de GBA
-  + Sal del juego de Consola Virtual de GBA
 
 ## Formatear una tarjeta SD
 
@@ -206,24 +121,9 @@ Para identificar el ID de título de un archivo `<TitleID>.gbavc.sav`, puedes ob
   + Opcionalmente, puedes ingresar un nombre personalizado para la tarjeta SD
 1. Cuando se te pida, introduce la combinación de teclas mostrada para confirmar
 
-## Cifrar / descifrar un archivo .CIA
-
-Para mantener orden, copia cada `.cia` que quieras cifrar / descifrar a la carpeta `/cias/` en tu tarjeta SD
-{: .notice--info}
-
-1. Inicia GodMode9 manteniendo presionado (Start) mientras enciendes la consola
-1. Ve a `[0:] SDCARD` -> `cias`
-1. Presona (A) sobre el archivo `.cia` para seleccionarlo, luego selecciona "CIA image options..."
-1. Selecciona la opción para realizar la función deseada:
-    + **Encrypt to 0:/gm9/out:** Crea una copia cifrada del archivo `.cia` seleccionado en la carpeta `/gm9/out/` de tu tarjeta SD
-    + **Decrypt to 0:/gm9/out:** Crea una copia descifrada del archivo `.cia` seleccionado en la carpeta `/gm9/out/` de tu tarjeta SD
-    + **Encrypt inplace:** Reemplaza el archivo `.cia` seleccionado con uno cifrado
-    + **Desencriptar in-situ:** Reemplaza el archivo `.cia` seleccionado con uno desencriptado
-1. Tu `.cia` cifrado / descifrado será guardado en la ubicación seleccionada
-
 ## Remover un NNID sin formatear tu consola
 
-1. Inicia GodMode9 manteniendo presionado (Start) mientras enciendes la consola
+1. Press and hold (Start), and while holding (Start), power on your device. This will launch GodMode9
 1. Presiona el botón (Home) para abrir el menú de acción
 1. Selecciona "Scripts..."
 1. Selecciona "GM9Megascript"

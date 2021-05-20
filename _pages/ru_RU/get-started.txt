@@ -6,49 +6,25 @@ title: "Начало"
 
 ### Обязательно к прочтению
 
-Выберите подходящую для вашей версии страницу из таблицы ниже. Обратите внимание, что столбцы "С" и "По" обозначают границы диапазона. Это означает, к примеру, что диапазон "с 9.0.0 по 9.2.0" включает в себя 9.0.0, 9.1.0 и 9.2.0.
+If you have hacked your 3DS in the past, or you purchased your 3DS second-hand, it is possible that your console already has custom firmware. You should [check for CFW](checking-for-cfw) before proceeding.
+{: .notice--warning}
 
-Кроме того, два последних столбца относятся к последнему числу версии прошивки вашего устройства (которая обозначает версию установленного в системе браузера). Если версия оканчивается на -0, значит, у вас отсутствует браузер, любое другое число больше 0 говорит о том, что браузер установлен.
-
-Например, если у вас версия прошивки "5.0.0-0E", необходимо выбрать ячейку на пересечении колонки "Без браузера" и ряда "С 5.0.0 по 5.1.0" так как версия системы находится в этом диапазоне и в системе не установлен браузер.
+Выберите подходящую для вашей версии страницу из таблицы ниже. Обратите внимание, что столбцы "С" и "По" обозначают границы диапазона.
 
 Версия программного обеспечения отображается в правом нижнем углу верхнего экрана в приложении Системные настройки (System settings).
 
 ![]({{ "/images/screenshots/system-version.png" | absolute_url }})
 {: .notice--info}
 
-**Если вы не можете следовать инструкциям для конкретной версии из-за невыполненных предварительных условий, обновитесь до последней версии либо обратите внимание на строку "Все версии". Эти методы работают вне зависимости от версии прошивки.**
-
-Любую версию прошивки можно обновить на более высокую из этой же колонки [с помощью картриджа](cart-update) (или выполнив Обновление системы), и после этого продолжить выполнять инструкцию.
-
-Если вы уже взламывали вашу 3DS ранее и использовали кастомную прошивку на основе EmuNAND, следуйте инструкциям, находясь на SysNAND. Заменяйте любые существующие файлы. В конце все ваши данные будут перенесены из EmuNAND в SysNAND с B9S. Если вы используете menuhax, вы должны [очистить данные меню HOME](troubleshooting#очистка-данных-меню-home), чтобы удалить menuhax перед тем, как начать.
-
-Эта страница содержит инструкции по установке boot9strap на *не взломанную* 3DS или 2DS. Если у вас уже установлен arm9loaderhax, и вы хотите обновиться до boot9strap, следуйте инструкциям в разделе [с A9LH до B9S](a9lh-to-b9s).
-{: .notice--primary}
-
-Перед началом, пользователям Windows необходимо включить отображение расширений файлов следуя [Расширения файлов (Windows)](file-extensions-(windows))!
-{: .notice--info}
-
-Прежде чем начать, рекомендуется проверить свою SD-карту на ошибки с помощью [H2testw (Windows)](h2testw-(windows)), [F3 (Linux)](f3-(linux)), или [F3X (Mac)](f3x-(mac))!
+Before starting, you may want to check your SD card for errors using [H2testw (Windows)](h2testw-(windows)), [F3 (Linux)](f3-(linux)), or [F3XSwift (Mac)](f3xswift-(mac))!
 {: .notice--warning}
 
-{% capture notice-1 %}
-Сообщается о волне банов, выданных Nintendo пользователям CFW. Чтобы защитить себя, выполните следующие шаги перед началом этого руководства:
-
-1. Откройте Системные настройки, затем "Интернет-настройки", затем "SpotPass", затем "Отправка информации о системе"
-1. Отключите опцию "Отправка информации о системе"
-1. Закройте Системные настройки
-1. Откройте Список друзей ([оранжевый значок в виде лица]({{ "/images/friend-list-icon.png" | absolute_url }}) на верхней строчке меню HOME)
-  + Если появляется ошибка и вас не пускают в меню, значит либо нужная настройка в Списке друзей уже отключена, либо консоль не может подключиться к серверам Nintendo (по причине бана или проблем с соединением)
-1. Перейдите в настройки Списка друзей, затем "Настройки сообщений друга", затем "Показать друзьям, во что вы играете"
-1. Отключите опцию "Показать друзьям, во что вы играете"
-1. Закройте Список друзей
-
-{% endcapture %}
-
-<div class="notice--danger">{{ notice-1 | markdownify }}</div>
+While we believe that custom firmware is safe for online use, there have been online network bans in the past, primarily for cheating and suspicious eShop behavior.
+{: .notice--warning}
 
 ### Таблица версий
+
+The letter and number after the system version (for example, 11.14.0-**46U**) is not relevant in this version table.
 
 <table>
   <colgroup>
@@ -60,38 +36,27 @@ title: "Начало"
     <tr>
       <th style="text-align: center">С</th>
       <th style="text-align: center">По</th>
-      <th style="text-align: center">Без браузера</th>
-      <th style="text-align: center">С браузером</th>
+      <th style="text-align: center">Action</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center; font-weight: bold;">1.0.0</td>
-      <td style="text-align: center; font-weight: bold;">2.0.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2">Обновитесь до последней версии прошивки или используйте метод "Все версии"</td>
-    </tr>
-    <tr>
-      <td style="text-align: center; font-weight: bold;">2.1.0</td>
-      <td style="text-align: center; font-weight: bold;">8.1.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><a href="installing-boot9strap-(soundhax)">Установка boot9strap (Soundhax)</a></td>
-    </tr>
-    <tr>
-      <td style="text-align: center; font-weight: bold;">9.0.0</td>
       <td style="text-align: center; font-weight: bold;">11.3.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><a href="homebrew-launcher-(soundhax)">Homebrew Launcher (Soundhax)</a></td>
-    </tr><tr>
+      <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(soundhax)">Installing boot9strap (Soundhax)</a></td>
+    </tr>
+	<tr>
       <td style="text-align: center; font-weight: bold;">11.4.0</td>
-      <td style="text-align: center; font-weight: bold;">11.11.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2">Обновитесь до последней версии прошивки или используйте метод "Все версии"</td>
+      <td style="text-align: center; font-weight: bold;">11.13.0</td>
+      <td style="text-align: center; font-weight: bold;">Update your 3DS to the latest version through System Settings</td>
     </tr>
     <tr>
-      <td style="text-align: center; font-weight: bold;">11.12.0</td>
-      <td style="text-align: center; font-weight: bold;">11.13.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><a href="seedminer">Seedminer</a></td>
+      <td style="text-align: center; font-weight: bold;" colspan="2">11.14.0 (latest version)</td>
+      <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(browser)">Installing boot9strap (Browser)</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;" colspan="2">ВСЕ ВЕРСИИ<br></td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="ntrboot">ntrboot</a><br><sub>(Требуется совместимый флешкартридж)</sub></p><p style="display: inline-block; margin-top: 1.3em; vertical-align: super; width: 6%">или</p><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(hardmod)">Установка boot9strap (Hardmod)</a><br><sub>(Требуется пайка)</sub></p></td>
+      <td style="text-align: center; font-weight: bold;"><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="ntrboot">ntrboot</a><br><sub>(Requires a Compatible Flashcart)</sub></p><p style="display: inline-block; margin-top: 1.3em; vertical-align: super; width: 6%">or</p><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(hardmod)">Installing boot9strap (Hardmod)</a><br><sub>(Requires Soldering)</sub></p></td>
     </tr>
   </tbody>
 </table>
